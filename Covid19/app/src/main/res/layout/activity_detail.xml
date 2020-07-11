@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_coronavirus"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1.1"
+                android:weightSum="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CỔNG THÔNG TIN"
+                    android:textSize="8pt"
+                    android:textColor="#FAF6F6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DỊCH BỆNH COVID-19"
+                    android:textSize="8pt"
+                    android:textColor="#F10909"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.9"
+                android:weightSum="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="đường dây nóng"
+                    android:layout_gravity="center"
+                    android:textColor="#FAF6F6"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19009095/19003228"
+                    android:layout_gravity="center"
+                    android:textColor="#F10909"
+                    android:layout_marginTop="7dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:id="@+id/khuyenCao"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="khuyến cáo"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"
+            android:textColor="#FAF6F6"/>
+        <TextView
+            android:id="@+id/hoTro"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="hỗ trợ"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"
+            android:textColor="#FAF6F6"/>
+        <TextView
+            android:id="@+id/tinTuc"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="tin tức"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"
+            android:textColor="#FAF6F6"/>
+        <TextView
+            android:id="@+id/canBiet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="cần biết"
+            android:textSize="7pt"
+            android:textColor="#FAF6F6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:hint="Enter country name or code..."
+            android:background="#00000000"
+            android:id="@+id/srCountryText"/>
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="search"
+            android:background="@drawable/custom_button_search"
+            android:id="@+id/btnSearchCountry"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detailCountry"/>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ErrorActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_coronavirus"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1.1"
+                android:weightSum="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CỔNG THÔNG TIN"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DỊCH BỆNH COVID-19"
+                    android:textSize="8pt"
+                    android:textColor="#F10909"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.9"
+                android:weightSum="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="đường dây nóng"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19009095/19003228"
+                    android:layout_gravity="center"
+                    android:textColor="#F10909"
+                    android:layout_marginTop="7dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="khuyến cáo"
+            android:textColor="#FAF6F6"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="hỗ trợ"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"
+            android:textColor="#FAF6F6"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="tin tức"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"
+            android:textColor="#FAF6F6"/>
+        <TextView
+            android:id="@+id/chiTietDich"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="chi tiết dịch bệnh >>"
+            android:textSize="7pt"
+            android:textColor="#BD9C9C"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:gravity="center"
+            android:textSize="11pt"
+            android:textColor="#ED0D0D"
+            android:id="@+id/tvErrorApiCovid"/>
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="comback"
+            android:layout_marginTop="30dp"
+            android:id="@+id/combackMainActivity"/>
+
+    </LinearLayout>
+
+</LinearLayout>

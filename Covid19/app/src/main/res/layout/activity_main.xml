@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_coronavirus"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1.1"
+                android:weightSum="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CỔNG THÔNG TIN"
+                    android:textSize="8pt"
+                    android:textColor="#FAF6F6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DỊCH BỆNH COVID-19"
+                    android:textSize="8pt"
+                    android:textColor="#F10909"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="0.9"
+                android:weightSum="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="đường dây nóng"
+                    android:layout_gravity="center"
+                    android:textColor="#F8F5F5"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19009095/19003228"
+                    android:layout_gravity="center"
+                    android:textColor="#F10909"
+                    android:layout_marginTop="7dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/khuyenCao"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="khuyến cáo"
+            android:textColor="#FAF6F6"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"/>
+        <TextView
+            android:id="@+id/hoTro"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="hỗ trợ"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"
+            android:textColor="#FAF6F6"/>
+        <TextView
+            android:id="@+id/tinTuc"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="tin tức"
+            android:textSize="7pt"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:layout_marginRight="2dp"
+            android:textColor="#FAF6F6"/>
+        <TextView
+            android:id="@+id/chiTietDich"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="chi tiết dịch bệnh >>"
+            android:textSize="7pt"
+            android:textColor="#BD9C9C"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="@drawable/background_ncov"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/background_item"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1.4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="VIỆT NAM"
+                android:background="@drawable/lable_viet_nam"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#F4F0F0"/>
+            <LinearLayout
+                android:layout_weight="3.5"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số ca nhiễm"
+                            android:textColor="#ED0D0D"
+                            android:gravity="center"
+                            android:textSize="9pt"/>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#ED0D0D"
+                            android:gravity="center"
+                            android:textSize="8pt"
+                            android:id="@+id/caNhiemVn"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Đang điều trị"
+                                android:textColor="#FFC107"
+                                android:gravity="center"
+                                android:textSize="9pt"/>
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#FFC107"
+                                android:gravity="center"
+                                android:textSize="8pt"
+                                android:id="@+id/dieuTriVn"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Khỏi"
+                                android:textColor="#2196F3"
+                                android:gravity="center"
+                                android:textSize="9pt"/>
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#2196F3"
+                                android:gravity="center"
+                                android:textSize="8pt"
+                                android:id="@+id/khoiVn"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Tử vong"
+                                android:textColor="#656363"
+                                android:textSize="9pt" />
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="#656363"
+                                android:textSize="8pt"
+                                android:id="@+id/tuVongVn"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/background_item"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_weight="1.4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="THẾ GIỚI"
+                android:background="@drawable/lable_the_gioi"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:textColor="#F4F0F0"/>
+            <LinearLayout
+                android:layout_weight="3.5"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Số ca nhiễm"
+                            android:textColor="#ED0D0D"
+                            android:gravity="center"
+                            android:textSize="9pt"/>
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#ED0D0D"
+                            android:gravity="center"
+                            android:textSize="8pt"
+                            android:id="@+id/nhiemTg"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Đang điều trị"
+                                android:textColor="#FFC107"
+                                android:gravity="center"
+                                android:textSize="9pt"/>
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#FFC107"
+                                android:gravity="center"
+                                android:textSize="8pt"
+                                android:id="@+id/dangNhiemTg"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" >
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Khỏi"
+                                android:textColor="#2196F3"
+                                android:gravity="center"
+                                android:textSize="9pt"/>
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#2196F3"
+                                android:gravity="center"
+                                android:textSize="8pt"
+                                android:id="@+id/khoiTg"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" >
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:weightSum="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Tử vong"
+                                android:textColor="#656363"
+                                android:textSize="9pt" />
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="#656363"
+                                android:textSize="8pt"
+                                android:id="@+id/tuVongTg"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
